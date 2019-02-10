@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: url('img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main {
+    background-color: white;
+    width: 500px;
+}
+
+.main h1 {
+    text-align: center;
+}
+.row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-top: 1px solid #333;
+}
+
+.row img {
+    width: 5rem;
+}
