@@ -5,22 +5,75 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    color: #37383B;
+    letter-spacing: 1px;
 }
 
 .main {
     background-color: white;
-    width: 500px;
+    width: 450px;
+    margin: auto;
+    margin-top: 150px;
+    border-radius: 8px;
+}
+
+.dots {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 15%;
+    margin: auto;
+    padding: 20px;
+}
+
+.dots .dot {
+    background-color: #DDDDDD;
+    width: 8px;
+    height: 8px;
+    border-radius: 100px;
+}
+
+.dots .dot:nth-child(1) {
+    background-color: #A9A9A9;
 }
 
 .main h1 {
     text-align: center;
+    font-weight: 500;
 }
 .row {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    border-top: 1px solid #333;
+    grid-template-columns: 100px 1fr;
+    padding: 10px;
+    border-top: 1px solid #DDDDDD;
+    align-items: center;
+    font-weight: 600;
+    color: #AEABA9;
+}
+
+.row:hover {
+    background-color: pink;
+    color: #070E0C;
+}
+
+.selected {
+
 }
 
 .row img {
     width: 5rem;
+}
+
+.row-next {
+    display: block;
+    text-align: center;
+    padding: 20px 0px;
+    background-color: #598BDB;
+    color: white;
+    align-items: center;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.row-next img {
+    width: 1.5rem;
 }
