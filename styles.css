@@ -22,7 +22,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     width: 15%;
     margin: auto;
-    padding: 20px;
+    padding: 25px;
 }
 
 .dots .dot {
@@ -64,8 +64,9 @@ body {
 }
 
 .row-next {
-    display: block;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     padding: 20px 0px;
     background-color: #598BDB;
     color: white;
