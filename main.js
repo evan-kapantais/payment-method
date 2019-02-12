@@ -25,6 +25,11 @@ function toggleSelected() {
     checker.alt = 'check';
 
     this.appendChild(checker);
+
+    var rowNext =  document.getElementById('row-next');
+    rowNext.style.backgroundColor = '#598BDB';
+    rowNext.setAttribute('href', 'https://github.com');
+    rowNext.setAttribute('target', '_blank');
     
     console.log(checker);
 }
