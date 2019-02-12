@@ -28,8 +28,7 @@ function toggleSelected() {
 
     var rowNext =  document.getElementById('row-next');
     rowNext.style.backgroundColor = '#598BDB';
-    rowNext.setAttribute('href', 'https://github.com');
-    rowNext.setAttribute('target', '_blank');
+    rowNext.setAttribute('href', 'thanks.html');
     
     console.log(checker);
 }
