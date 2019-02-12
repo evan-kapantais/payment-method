@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: url('img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #37383B;
+    letter-spacing: 1px;
+}
+
+.main {
+    background-color: white;
+    width: 450px;
+    margin: auto;
+    margin-top: 150px;
+    border-radius: 8px;
+    padding-top: 20px;
+}
+
+.main h1 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+#close-btn {
+    background-color: #598BDB;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 0px;
+    color: white;
+    letter-spacing: 2px;
+    align-items: center;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+}
