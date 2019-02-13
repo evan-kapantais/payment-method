@@ -1,8 +1,8 @@
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    /* background-color: slategrey; */
-    background-image: url('https://raw.githubusercontent.com/evan-kapantais/payment-method/master/img/background.jpg');
+    background-color: slategrey;
+    background-image: url('/img/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
