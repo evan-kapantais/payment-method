@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     background-color: slategrey;
-    background-image: url('https://evan-kapantais.github.io/payment-method/img/background.jpg');
+    background-image: url('/img/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
