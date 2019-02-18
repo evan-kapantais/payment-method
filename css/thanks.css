@@ -23,8 +23,8 @@ body {
 
 .dots {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 15%;
+    grid-template-columns: repeat(2, 1fr);
+    width: 10%;
     margin: auto;
     padding: 25px;
 }
