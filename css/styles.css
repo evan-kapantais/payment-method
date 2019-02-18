@@ -13,8 +13,9 @@ body {
 #main {
     background-color: whitesmoke;
     width: 450px;
+    position: relative;
     margin: auto;
-    margin-top: 150px;
+    top: 27vh;
     border-radius: 8px;
 }
 

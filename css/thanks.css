@@ -13,11 +13,31 @@ body {
 .main {
     background-color: whitesmoke;
     width: 450px;
+    position: relative;
     margin: auto;
-    margin-top: 150px;
+    top: 27vh;
     border-radius: 8px;
-    padding: 30px;
+    padding-bottom: 30px;
     line-height: 2;
+}
+
+.dots {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 15%;
+    margin: auto;
+    padding: 25px;
+}
+
+.dots .dot {
+    background-color: #DDDDDD;
+    width: 8px;
+    height: 8px;
+    border-radius: 100px;
+}
+
+.dots .dot:nth-child(2) {
+    background-color: #A9A9A9;
 }
 
 .main h1 {
