@@ -22,6 +22,7 @@ body {
 .dots {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
     width: 10%;
     margin: auto;
     padding: 25px;
