@@ -53,5 +53,5 @@ function slideCard() {
 }
 
 function changeBg() {
-    document.body.style.backgroundImage = "url('../img/background-01.jpg')";
+    document.body.style.backgroundImage = "url('img/background-01.jpg')";
 }
