@@ -2,24 +2,19 @@ var row = document.getElementsByClassName('row-method');
 var rowNext = document.getElementById('row-next');
 
 function addListeners() {
-
     for (var i = 0; i < row.length; ++i) {
-    row[i].addEventListener('mousedown', toggleSelected);
+        row[i].addEventListener('mousedown', toggleSelected);
     }
 
     rowNext.addEventListener('click', slideCard);
 }
 
-
 function toggleSelected() {
 
     // check if a row is selected; if yes, remove selection and select the one clicked
     for (var i = 0; i < row.length; ++i) {
-
         row[i].classList.remove('selected');
-
         if (row[i].children.length > 2) {
-
             row[i].lastChild.remove();
         }
     }
@@ -35,7 +30,6 @@ function toggleSelected() {
 
     var rowNext =  document.getElementById('row-next');
     rowNext.style.backgroundColor = '#598BDB';
-    // rowNext.setAttribute('href', 'thanks.html');
 }
 
 function slideCard() {
@@ -46,9 +40,11 @@ function slideCard() {
     var thanks = document.getElementById('main-thanks');
     var dot1 = document.getElementById('dot1');
     var dot2 = document.getElementById('dot2');
+    var img = document.getElementById('img-01');
 
     main.style.transform = "translate(-38vw)";
     mainPayment.style.opacity = "0";
     mainThanks.style.opacity = "1";
     mainH.style.opacity = "1";
+    img.style.opacity = "0";
 }

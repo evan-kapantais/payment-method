@@ -2,13 +2,24 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     background-color: slategrey;
-    background-image: url('../img/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     color: #37383B;
     letter-spacing: 2px;
     overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#images {
+    position: relative;
+}
+#images img {
+    position: fixed;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: opacity 2s ease;
 }
 
 #main {
@@ -16,8 +27,8 @@ body {
     flex-direction: row;
     justify-content: space-between;
     position: relative;
-    top: 27vh;
-    transform: translate(38vw);
+    top: 25vh;
+    transform: translate(40vw);
     transition: transform 1s ease-in-out;
 }
 
