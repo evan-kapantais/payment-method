@@ -85,6 +85,10 @@ body {
     background-color: whitesmoke;
 }
 
+.row-method {
+    transition: color 0.5s ease;
+}
+
 .row-method:hover {
     background-color: ghostwhite;
     color: #37383B;
@@ -92,6 +96,7 @@ body {
 
 #check {
     width: 20px;
+    transition: color 0.3s ease;
 }
 
 .selected {
