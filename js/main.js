@@ -6,7 +6,7 @@ function addListeners() {
         row[i].addEventListener('mousedown', toggleSelected);
     }
 
-    rowNext.addEventListener('click', slideCard);
+    rowNext.addEventListener('click', processPayment);
 }
 
 function toggleSelected() {
@@ -32,6 +32,11 @@ function toggleSelected() {
     rowNext.style.backgroundColor = '#598BDB';
 }
 
+function processPayment() {
+    slideCard();
+    changeBg();
+}
+
 function slideCard() {
     var main = document.getElementById('main'); 
     var mainPayment = document.getElementById('main-payment');
@@ -40,11 +45,13 @@ function slideCard() {
     var thanks = document.getElementById('main-thanks');
     var dot1 = document.getElementById('dot1');
     var dot2 = document.getElementById('dot2');
-    var img = document.getElementById('img-01');
 
     main.style.transform = "translate(-38vw)";
     mainPayment.style.opacity = "0";
     mainThanks.style.opacity = "1";
     mainH.style.opacity = "1";
-    img.style.opacity = "0";
+}
+
+function changeBg() {
+    document.body.style.backgroundImage = "url('../img/background-01.jpg')";
 }
