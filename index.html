@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body">
+<body onload="addListeners()">
 
   <div id="main">
     <div class="dots">
@@ -18,25 +18,27 @@
 
     <h1 class="title">PAYMENT METHOD</h1>
 
-    <a  href="#" class="row row-method">
-      <img src="img/visa.svg" alt="visa">
-      <div class="rowName">VISA</div>
-    </a>
+    <div id="rows">
+      <a  href="#" class="row row-method">
+        <img src="img/visa.svg" alt="visa">
+        <div class="rowName">VISA</div>
+      </a>
 
-    <a href="#" class="row row-method">
-      <img src="img/mastercard.svg" alt="mastercard">
-      <div class="rowName">MASTERCARD</div>
-    </a>
+      <a href="#" class="row row-method">
+        <img src="img/mastercard.svg" alt="mastercard">
+        <div class="rowName">MASTERCARD</div>
+      </a>
 
-    <a href="#"class="row row-method">
-      <img src="img/maestro.svg" alt="maestro">
-      <div class="rowName">MAESTRO</div>
-    </a>
+      <a href="#"class="row row-method">
+        <img src="img/maestro.svg" alt="maestro">
+        <div class="rowName">MAESTRO</div>
+      </a>
 
-    <a href="#" class="row row-next" id="row-next">
-      NEXT STEP
-      <img src="img/arrow.svg" alt="arrow">
-    </a>
+      <a href="#" class="row row-next" id="row-next">
+        NEXT STEP
+        <img src="img/arrow.svg" alt="arrow">
+      </a>
+    </div>
 
   </div>
 

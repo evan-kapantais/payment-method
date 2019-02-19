@@ -1,8 +1,15 @@
 var row = document.getElementsByClassName('row-method');
+var rowNext = document.getElementById('row-next');
 
-for (var i = 0; i < row.length; ++i) {
+function addListeners() {
+
+    for (var i = 0; i < row.length; ++i) {
     row[i].addEventListener('mousedown', toggleSelected);
+    }
+
+    rowNext.addEventListener('mousedown', collapseRows);
 }
+
 
 function toggleSelected() {
 
@@ -28,7 +35,10 @@ function toggleSelected() {
 
     var rowNext =  document.getElementById('row-next');
     rowNext.style.backgroundColor = '#598BDB';
-    rowNext.setAttribute('href', 'thanks.html');
-
-    console.log(checker);
+    // rowNext.setAttribute('href', 'thanks.html');
 }
+
+// function collapseRows(){
+//     var rows = document.getElementById('rows');
+//     rows.style.height = '0px';
+// }
