@@ -15,40 +15,36 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: relative;
+    top: 27vh;
+    transform: translate(38vw);
+    transition: transform 1s ease-in-out;
 }
 
 #main-payment {
     background-color: whitesmoke;
     width: 450px;
-    position: relative;
-    margin: auto;
-    top: 27vh;
     border-radius: 8px;
-    transform: translateX(-25vw);
+    transition: opacity 1s ease-in;
 }
 
 #main-thanks {
-    transform: translateX(-25vw);
+    background-color: whitesmoke;
+    width: 450px;
+    height: 100%;
+    border-radius: 8px;
+    padding-bottom: 30px;
+    line-height: 2;
+    opacity: 0;
+    transition: opacity 1s ease-in;
 }
 
-.slideOut {
-    animation: slideCardOut 1s ease forwards;
-}
-
-.slideIn {
-    animation: slideCardIn 1s ease forwards;
-}
-
-@keyframes slideCardOut {
-    100% {
-        transform: translateX(100vw);
-    }
-}
-
-@keyframes slideCardIn {
-    100% {
-        transform: translateX(0vw);
-    }
+#title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: opacity 1s 0.5s ease-in;
 }
 
 .dots {
@@ -67,7 +63,7 @@ body {
     border-radius: 100px;
 }
 
-.dots .dot:nth-child(1) {
+#dot1, #dot2 {
     background-color: #A9A9A9;
 }
 

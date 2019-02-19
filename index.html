@@ -7,51 +7,41 @@
   <title>Payment Method</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="css/thanks.css" />
 </head>
 <body onload="addListeners()">
-
   <div id="main">
-
-    <div id="main-thanks">
-      <div class="dots">
-        <div class="dot"></div>
-        <div class="dot"></div>
-      </div>
-      <h1 class="title">YOUR PURCHASE HAS BEEN PROCESSED CORRECTLY</h1>
-    </div>
-
     <div id="main-payment">
       <div class="dots">
-        <div class="dot"></div>
+        <div class="dot" id="dot1"></div>
         <div class="dot"></div>
       </div>
-
       <h1 class="title">PAYMENT METHOD</h1>
-
       <div id="rows">
         <a  href="#" class="row row-method">
           <img src="img/visa.svg" alt="visa">
           <div class="rowName">VISA</div>
         </a>
-
         <a href="#" class="row row-method">
           <img src="img/mastercard.svg" alt="mastercard">
           <div class="rowName">MASTERCARD</div>
         </a>
-
         <a href="#"class="row row-method">
           <img src="img/maestro.svg" alt="maestro">
           <div class="rowName">MAESTRO</div>
         </a>
-
         <a href="#" class="row row-next" id="row-next">
           NEXT STEP
           <img src="img/arrow.svg" alt="arrow">
         </a>
       </div>
     </div>
-
+    <div id="main-thanks">
+      <div class="dots">
+        <div class="dot"></div>
+        <div class="dot" id="dot2"></div>
+      </div>
+      <h1 id="title">YOUR PURCHASE<br> HAS BEEN<br> PROCESSED CORRECTLY</h1>
+    </div>
   </div>
 
   <script src="js/main.js"></script>

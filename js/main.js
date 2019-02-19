@@ -7,7 +7,7 @@ function addListeners() {
     row[i].addEventListener('mousedown', toggleSelected);
     }
 
-    rowNext.addEventListener('mousedown', slideMainCard);
+    rowNext.addEventListener('click', slideCard);
 }
 
 
@@ -38,10 +38,18 @@ function toggleSelected() {
     // rowNext.setAttribute('href', 'thanks.html');
 }
 
-function slideMainCard() {
-    var main = document.getElementById('main-payment');
-    main.classList.add('slideOut');
-
+function slideCard() {
+    var main = document.getElementById('main'); 
+    var mainPayment = document.getElementById('main-payment');
+    var mainThanks = document.getElementById('main-thanks');
+    var mainH = document.getElementById('title');
     var thanks = document.getElementById('main-thanks');
-    thanks.classList.add('SlideIn');
+    var dot1 = document.getElementById('dot1');
+    var dot2 = document.getElementById('dot2');
+
+    document.body.style.backgroundImage = "url('../img/background-01.jpg')";
+    main.style.transform = "translate(-38vw)";
+    mainPayment.style.opacity = "0";
+    mainThanks.style.opacity = "1";
+    mainH.style.opacity = "1";
 }
