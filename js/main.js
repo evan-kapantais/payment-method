@@ -47,7 +47,6 @@ function slideCard() {
     var dot1 = document.getElementById('dot1');
     var dot2 = document.getElementById('dot2');
 
-    document.body.style.backgroundImage = "url('../img/background-01.jpg')";
     main.style.transform = "translate(-38vw)";
     mainPayment.style.opacity = "0";
     mainThanks.style.opacity = "1";
