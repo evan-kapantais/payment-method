@@ -8,15 +8,47 @@ body {
     background-attachment: fixed;
     color: #37383B;
     letter-spacing: 2px;
+    overflow-x: hidden;
 }
 
 #main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#main-payment {
     background-color: whitesmoke;
     width: 450px;
     position: relative;
     margin: auto;
     top: 27vh;
     border-radius: 8px;
+    transform: translateX(-25vw);
+}
+
+#main-thanks {
+    transform: translateX(-25vw);
+}
+
+.slideOut {
+    animation: slideCardOut 1s ease forwards;
+}
+
+.slideIn {
+    animation: slideCardIn 1s ease forwards;
+}
+
+@keyframes slideCardOut {
+    100% {
+        transform: translateX(100vw);
+    }
+}
+
+@keyframes slideCardIn {
+    100% {
+        transform: translateX(0vw);
+    }
 }
 
 .dots {
@@ -39,7 +71,7 @@ body {
     background-color: #A9A9A9;
 }
 
-#main h1 {
+#main-payment h1 {
     text-align: center;
     font-weight: 500;
 }

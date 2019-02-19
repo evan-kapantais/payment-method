@@ -1,16 +1,4 @@
-body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    background-color: slategrey;
-    background-image: url('../img/background.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    color: #37383B;
-    letter-spacing: 1px;
-}
-
-.main {
+#main-thanks {
     background-color: whitesmoke;
     width: 450px;
     position: relative;
@@ -41,7 +29,7 @@ body {
     background-color: #A9A9A9;
 }
 
-.main h1 {
+#main-thanks h1 {
     text-align: center;
     font-weight: 500;
     font-size: 1.5rem;

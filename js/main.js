@@ -7,7 +7,7 @@ function addListeners() {
     row[i].addEventListener('mousedown', toggleSelected);
     }
 
-    rowNext.addEventListener('mousedown', collapseRows);
+    rowNext.addEventListener('mousedown', slideMainCard);
 }
 
 
@@ -38,7 +38,10 @@ function toggleSelected() {
     // rowNext.setAttribute('href', 'thanks.html');
 }
 
-// function collapseRows(){
-//     var rows = document.getElementById('rows');
-//     rows.style.height = '0px';
-// }
+function slideMainCard() {
+    var main = document.getElementById('main-payment');
+    main.classList.add('slideOut');
+
+    var thanks = document.getElementById('main-thanks');
+    thanks.classList.add('SlideIn');
+}
